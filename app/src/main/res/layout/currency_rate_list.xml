@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/currency_rate_list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    style="@style/AppTheme.List">
+
+    <ImageView
+        android:id="@+id/conntry_flag"
+        android:layout_width="60dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/country_code"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/country_currency_rate"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="right"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sg.com.kaplan.pdma.currencyconverter.Main"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp">
+
+        <RelativeLayout
+            android:id="@+id/layoutA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/SpinnerCurrencyA"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/EditTextCurrencyA"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text=""
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/SpinnerCurrencyA"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/SpinnerCurrencyB"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/EditTextCurrencyB"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text=""
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/SpinnerCurrencyB"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp">
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fnBaseCurrency"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/TextViewBaseCurrency"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text=""
+                android:textStyle="bold"
+                android:gravity="center|left"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp">
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fnLastUpdate"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/TextViewLastUpdate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text=""
+                android:textStyle="bold"
+                android:gravity="center|left" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:background="@drawable/drop_shadow"/>
+
+    <ListView
+        android:id="@+id/ListViewRate"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"></ListView>
+
+
+</LinearLayout>
